@@ -1,0 +1,2 @@
+# SUDE
+nesneye yonelik programlama
