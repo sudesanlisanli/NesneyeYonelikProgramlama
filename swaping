@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 //Hanım sude şanlı 160202014
-//selection sort and swaping
+//swap
 
 int lilyshome(int a,int b[]);
 
