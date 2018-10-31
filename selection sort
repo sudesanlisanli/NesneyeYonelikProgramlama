@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Hanım sude şanlı 160202014
+//selection sort and swaping
+
+int lilyshome(int a,int b[]);
+
+int main()
+{
+int a;
+   printf("boyut:");
+   scanf("%d",&a);
+      int dizi[a];
+      int i;
+      printf("elemanlar:");
+   for(i=0;i<a;i++){
+    scanf("%d",&dizi[i]);
+   }
+    printf("\n swap =%d ",lilyshome(a,dizi));
+
+    return 0;
+
+}
+
+int lilyshome(int a,int b[]){
+    int swap=0;
+    int gecici;
+    int p;
+for(int i=0;i<a-1;i++){
+        p=i;
+    for(int j=i+1;j<a;j++){
+
+    if (b[i]>b[j]){
+        p=j;
+        }
+    }
+    if(p!=i){
+
+        gecici=b[i];
+        b[i]=b[p];
+        b[p]=gecici;
+        swap++;
+       }
+
+    }
+
+    for(int i=0;i<a;i++){
+        printf("%d " ,b[i]);
+
+    }
+
+return swap;
+}
+
+
