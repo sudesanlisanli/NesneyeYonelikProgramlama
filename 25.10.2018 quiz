@@ -1,0 +1,55 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication7;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author asus
+ */
+public class JavaApplication7 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       //girilen stringi tersten yazma
+       
+        System.out.println("string giriniz");
+       String str;
+       str=sc.next();
+       char [] a=str.toCharArray();
+       for(int i=(str.length()-1);i>=0;i--){
+           System.out.print(a[i]);
+       }
+        
+        System.out.println("dizinin boyutu");
+       int z;
+       z=sc.nextInt();
+       int [] dizi=new int[z];
+       for(int i=0;i<z;i++){
+       dizi[i]=sc.nextInt();
+    
+       }
+       int f=0;
+       int toplam=0;
+       for(int i=0;i<z-1;i++){
+       f=dizi[i+1]-dizi[i];
+       if(f<0){
+       f*=-1;
+       
+       }
+       toplam+=f;
+       }
+        System.out.println("toplam="+toplam);
+       
+     
+                
+    }
+    
+}
